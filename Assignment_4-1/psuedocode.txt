@@ -1,0 +1,35 @@
+# Pseudocode for calculating prices for custom house signs
+
+# Declare and initialize variables
+# charge = 35.00  
+# numChars = INPUT("Number of Characters: ")
+# color = INPUT("Color: ") 
+# woodType = INPUT("Woodtype: ")
+
+# Calculate additional charges
+# If the number of characters is greater than 5
+IF numChars > 5 THEN
+    additional_chars_charge = (numChars - 5) * 4
+ELSE
+    additional_chars_charge = 0
+END IF
+
+# Determine the wood type charge
+IF woodType == "oak" THEN
+    wood_charge = 20.00
+ELSE
+    wood_charge = 0.00
+END IF
+
+# Determine the color charge
+IF color == "gold" THEN
+    color_charge = 15.00
+ELSE
+    color_charge = 0.00
+END IF
+
+# Calculate total charge
+charge = charge + additional_chars_charge + wood_charge + color_charge
+
+# Output the charge for this sign
+PRINT "The charge for this sign is $" + charge
